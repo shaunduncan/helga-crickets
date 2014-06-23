@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='helga-crickets',
-    version='0.0.2',
+    version='0.0.3',
     description=('Helga plugin that will respond with the word crickets'
                  'after a question has gone unacknowledged for a configurable amount of time.'),
     author="Shaun Duncan",

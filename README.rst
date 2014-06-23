@@ -7,7 +7,9 @@ has gone unacknowledged for a configurable amount of time.
 Settings
 --------
 
-**CRICKETS_TIMEOUT** Integer time in seconds before helga responds
+**CRICKETS_TIMEOUT** Integer time in seconds before helga responds (Default 5 minutes)
+
+**CRICKETS_PRIORITY** Integer value of plugin processing priority (Default 50, Normal)
 
 License
 -------
