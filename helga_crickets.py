@@ -7,7 +7,7 @@ import smokesignal
 from twisted.internet import task
 
 from helga import settings
-from helga.plugins import match
+from helga.plugins import match, PRIORITY_NORMAL
 
 
 # Keep track of which channels should receive the message
@@ -39,7 +39,7 @@ def _init_schedule(client):
     loop.start(_get_timeout())
 
 
-@match(r'^(.*)$')
+@match(r'^(.*)$', priority=getattr(settings, 'CRICKETS_PRIORITY', PRIORITY_NORMAL))
 def crickets(client, channel, nick, message, matches):
     global _scheduled
 
